@@ -85,7 +85,8 @@ jobs:
       - name: Veracode Pipeline Results
         if: always()
         id: prepare-results
-        uses: Veracode/github-actions-integration-helper@feature/DXS-358
+        #uses: Veracode/github-actions-integration-helper@feature/DXS-358 
+        uses: TestOrganization1303/github-actions-integration-helper@main
         with:
           action: 'preparePipelineResults'
           token: ${{ inputs.token }}
